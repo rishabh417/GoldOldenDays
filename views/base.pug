@@ -1,0 +1,26 @@
+doctype html 
+html
+  head
+    title  Gold_Olden_Days 
+    style 
+      include ../static/home.css 
+    block style 
+      
+  body
+    nav.navbar 
+      ul 
+        li #[a(href='/') Home]
+        li #[a(href='/vision' target='_blank') Vision]
+        //- li #[a(href='/discussionForm' target='_blank') DiscussionForum]
+
+        a(href='/login' target='_blank')
+          button#userLogin 
+            |Login 
+        button#emailUs 
+            |Email Us   
+
+    block content
+      
+    footer#footer 
+            | Copyright © 2021 GoldOldenDays.com | All rights reserved 
+    block scripts           

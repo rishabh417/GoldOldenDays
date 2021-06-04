@@ -1,0 +1,111 @@
+body{    
+    background-color: #f907fc;
+    background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+}
+
+.loginHeading{
+    color: white;
+    background-color: blue;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flexbox;
+    width: 450px;
+    margin: auto;
+    margin-top: 53px;
+    border: 3px groove blue;
+    border-radius: 10%;    
+    
+}
+
+.loginContainer{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+.loginDetails{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    height: 300px;
+    width: 270px;
+    position: relative;
+    top: 102px;
+    left: 50px;
+
+}
+
+.loginFill{
+    display: block;
+    width: 266px;
+    padding: 23px;
+    margin: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 23px;  
+    outline: none; 
+
+}
+.loginContainer input{
+    display: block;
+    width: 266px;
+    padding: 23px;
+    margin: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 23px;  
+    outline: none; 
+
+}
+
+.registeringUser input{
+    display: block;
+    width: 266px;
+    padding: 23px;
+    margin: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 23px;  
+    outline: none; 
+
+}
+
+.loginSubmit{
+    width: 125px;
+    border-radius: 50px;
+    padding: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 102px;
+    outline: none;
+}
+
+.newUser{
+    width: 175px;
+    border-radius: 50px;
+    padding: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 75px;
+    outline: none;
+
+}
+.newUserRegister{
+    width: 175px;
+    border-radius: 50px;
+    padding: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 75px;
+    outline: none;
+}
+
+.hide{
+    display: none;
+}

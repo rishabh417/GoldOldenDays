@@ -1,0 +1,49 @@
+doctype html 
+html
+    head 
+        title Gold_Olden_Days 
+        style
+            include ../static/home.css 
+            include ../static/movingFace.css
+    body 
+        nav.navbar 
+            ul 
+                li #[a(href='/') Home]
+                li #[a(href='/') Vision]
+                li #[a(href='/') DiscussionForum]
+                button#userLogin 
+                    |Login 
+                button#emailUs 
+                    |Email Us   
+
+
+        section.introSection 
+            div.center-div
+                div#gold
+                    |Gold 
+                div.face
+                    div.eyes 
+                        div.eye 
+                            div.pupil 
+                        div.eye 
+                            div.pupil 
+                div#ldenDays 
+                    |LdenDays 
+        
+        section.gameSection
+            h2 
+                |Games 
+            div.games   
+                a(href='../JS_Games/CarGame/carGame.html')              
+                    div#gameBox1
+                        img(src="../static/gamesImg/car2.PNG", alt="This is Car Game" class='carGmameImage')
+               
+                a(href='../JS_Games/Snake_game/snakeGame.html')              
+                    div#gameBox2
+                        img(src="../static/gamesImg/snake1.PNG", alt="This is Car Game" class='carGmameImage')                    
+
+        footer#footer 
+            | Copyright © 2021 GoldOldenDays.com | All rights reserved 
+        script 
+            include ../static/home.js 
+            include ../static/movingFace.js 

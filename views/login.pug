@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/login.js") 
+
+block style 
+    style 
+        include ../static/login.css
+
+block content 
+    h2.loginHeading Enter Your Login Details 
+    div.loginContainer 
+        div.loginImg 
+            img(src="../static/gamesImg/loginImg.png", alt="Just an Interaction")
+        div.loginDetails
+            form(action="/login", method="post") 
+                div.registeringUser  
+                input(type="email", name="userEmail", placeholder="Enter Your Email Id / Username", class='loginFill')
+                input(type="Password", name="userPassword", placeholder="Enter Your Password", class='loginFill')
+                button.loginSubmit 
+                    |Old User / LOGIN 
+           
+            a(href='/register' method='get')
+                button.newUser
+                    |New User / Sign Up
+                

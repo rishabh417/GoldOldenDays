@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-image: url('bg1.png');
+    z-index: 1; */
+   
+}
+body{
+    background: url('../static/gamesImg/carBackgorund.png');
+    min-height: 100vh;
+    background-size: 100% 100%;
+}
+.hide{
+    display: none;
+}
+.startScreen{
+    /* display: flex; */
+    /* background-color: black; */
+    height: 100vh;
+    width: 33%;
+    margin: auto;
+}
+.car{
+    position: absolute;
+    height: 80px;
+    width: 38px;
+    /* background-color: red; */            
+    /* top:333px; */
+    /* left:333px; */
+    background-image: url('../static/gamesImg/car.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 23px;
+
+}
+.enemyCar{
+    position: absolute;
+    height: 80px;
+    width: 38px;
+    /* background-color: rgb(72, 255, 0); */
+    /* top:333px; */
+    /* left:333px; */
+    background-image: url('../static/gamesImg/car.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: invert(1);
+    /* bottom: 23px; */
+
+    /* bottom: 23px; */
+
+}
+.gameArea{
+    background-color: #202020;
+    position: relative;
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    /* z-index: 2; */
+    border-left: 4px dashed white;
+    border-right: 4px dashed white;
+}
+
+
+.lines{
+    height: 90px;
+    width: 13px;
+    background-color: honeydew;
+    margin-left: 193.5px;
+    position: absolute;
+}
+.score{
+    position: absolute;
+    top: 15px;
+    left: 32px;
+    background-color: greenyellow;
+    /* font-weight: bold; */
+    /* color: white; */
+    text-align: center;
+    /* height: 50px; */
+    width: 200px;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* padding: 100px; */
+
+    
+}
+#press{            
+    height: 60px;
+    width: 300px;
+    /* border: 5px solid red; */
+    background:linear-gradient(red,blue);
+    top: 321px;
+    left: 600px;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    padding-top: 41px;
+    border: 5px groove whitesmoke;
+    border-radius: 32px;
+}

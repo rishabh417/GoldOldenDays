@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/register.js") 
+
+block style 
+    style 
+        include ../static/login.css
+
+block content 
+    h2.loginHeading Enter Your Login Details 
+    div.loginContainer 
+        div.loginImg 
+            img(src="../static/gamesImg/loginImg.png", alt="Just an Interaction")
+        div.loginDetails
+            form(action="/newUser", method="post") 
+                div.registeringUser  
+                input(type="name" name='userName' placeholder='Enter your Name')
+                input(type="number" name='userAge' placeholder='Enter your Age')
+                input(type="number" name='userPhoneNumber' placeholder='Enter your Contact Number')
+                input(type="email", name="userEmail", placeholder="Enter Your Email Id / Username", class='loginFill')
+                input(type="Password", name="userPassword", placeholder="Enter Your Password", class='loginFill')
+                button.loginSubmit 
+                    |Sign Up 
+           
+            //- button.newUser
+            //-     |New User / Sign Up
+            //- a(href='/register')
+            //-     button(type="submit").newUserRegister.hide
+            //-         |Register YourSelf                      

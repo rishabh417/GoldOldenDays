@@ -1,0 +1,28 @@
+extends base.pug 
+
+block scripts 
+    script(src="../static/discussionForum.js") 
+
+block style 
+    style  
+        include ../static/discussionForum.css 
+        
+block content 
+    div.container 
+        h1.discussionForumHeading Welcome To DiscussionForum 
+        div.primary 
+            h2.queryHeading Query
+            form(action="/discussionForum", method="post") 
+                textarea(name="queryArea", cols="30", rows="10" id='queryArea') 
+                button.querySubmit Submit Query 
+            button.querySolution Give Solution  
+            button.newQuery New Query 
+            
+        //- div.primarySolution.hide   
+        //-     h2.queryHeading Query Solution 
+        //-     form(action="/discussionForum", method="post") 
+        //-         textarea(name="queryArea", cols="30", rows="10" id='queryArea') 
+        //-         button.querySubmit Submit Query 
+        //-     //- button.querySolution Submit Solution  
+        //-     button.newQuery New Query 
+

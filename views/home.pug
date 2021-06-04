@@ -1,0 +1,35 @@
+extends base.pug 
+
+block scripts 
+    script(src="../static/home.js") 
+    script(src="../static/movingFace.js") 
+block style 
+    style        
+        include ../static/movingFace.css
+
+block content     
+
+    section.introSection 
+        div.center-div
+            div#gold
+                |Gold 
+            div.face
+                div.eyes 
+                    div.eye 
+                        div.pupil 
+                    div.eye 
+                        div.pupil 
+            div#ldenDays 
+                |LdenDays 
+    
+    section.gameSection
+        h2 
+            |Games 
+        div.games   
+            a(href='/carGame')              
+                div#gameBox1
+                    img(src="../static/gamesImg/car2.PNG", alt="This is Car Game" class='carGmameImage')
+            
+            a(href='/snakeGame')              
+                div#gameBox2
+                    img(src="../static/gamesImg/snake1.PNG", alt="This is Car Game" class='carGmameImage')                    

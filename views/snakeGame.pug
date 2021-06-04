@@ -1,0 +1,12 @@
+extends base.pug
+block scripts 
+    script(src="../static/snakeGame.js") 
+block style 
+    style 
+        include ../static/snakeGame.css
+
+block content 
+    div.body 
+        div#board 
+        div#scoreBox 
+        

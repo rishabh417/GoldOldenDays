@@ -1,0 +1,184 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+    position: sticky;    
+    top:0;
+    left: 0; 
+    z-index: 1;
+
+}
+
+.navbar ul{
+    display: flex;
+    background-color: black;
+    height: 43px;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 23px;
+       
+}
+
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 23px;
+    font-size: 1.05rem;
+    padding: 25px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 19px;
+
+}
+
+.introSection{
+    background-color: yellow;
+    height: 725px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+/* .goldOldenDay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+} */
+
+#gold{
+    position: absolute;
+    left: -192px;
+    top: 154px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    text-decoration: overline;
+
+}
+
+#ldenDays{
+    position: absolute;
+    right: -667px;
+    top: 154px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    text-decoration: overline;
+
+
+
+}
+.gameSection{
+    /* border: 2px solid red; */
+    padding-top: 60px;
+    height: 332px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    background: floralwhite;
+    
+}
+
+.gameSection h2{
+    font-size: 2.6rem;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+    
+}
+
+.games{
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+#gameBox1{  
+    width: 509px;
+    margin: 20px;    
+    left: -167px;
+    position: relative;    
+}
+
+#gameBox1 img{
+    border-radius: 9%;
+
+    height: inherit;
+    width: inherit;   
+
+}
+#gameBox1 img:hover{
+    border: 9px groove gray;
+    border-radius: 10%;
+    
+}
+
+#gameBox2{  
+    width: 395px;
+    margin: 20px;
+}
+
+#gameBox2 img{  
+    border-radius: 9%;  
+    width: inherit;    
+    height: inherit;
+    position: relative;
+}
+
+#gameBox2 img:hover{
+    border: 9px groove gray;
+    border-radius: 10%;
+    
+}
+
+#userLogin{
+    position: absolute;
+    top: 7px;
+    right: 139px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 7px;
+    outline: none;
+    border: 1px groove black;
+    border-radius: 23px;
+    cursor: pointer;
+
+}
+#emailUs{
+    position: absolute;
+    right: 57px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    outline: none;
+    border: 1px groove black;
+    border-radius: 23px;
+    cursor: pointer;
+}
+#footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;    
+    height: 33px;
+    /* margin-top: 60px; */
+    justify-content: center;
+    align-items: center;
+}
+
+

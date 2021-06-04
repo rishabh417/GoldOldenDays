@@ -1,0 +1,17 @@
+extends base.pug 
+
+block scripts 
+    script(src="../static/carGame.js") 
+block style 
+    style 
+        include ../static/carGame.css 
+
+block content 
+    div.carGame 
+        div.score 
+        div.startScreen 
+            p#press CLICK HERE TO START THE GAME 
+        div.gameArea hide 
+
+
+
